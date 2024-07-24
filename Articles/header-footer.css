@@ -1,0 +1,104 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start Header */
+
+header {
+  background-color: #0171f9;
+  padding: 15px 0;
+}
+
+header a {
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+}
+
+/* End Header */
+
+/* Start Footer */
+
+footer {
+  padding: 5px 0;
+  background-color: black;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container p {
+  color: white;
+  margin: 0;
+}
+
+footer .container ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+footer .container ul li {
+  padding: 0 10px;
+}
+
+footer .container ul li a {
+  color: white;
+  transition: 0.3s;
+}
+
+footer .container ul li a:hover {
+  color: #0171f9;
+}
+
+@media (max-width: 767px) {
+  footer .container {
+    flex-direction: column-reverse;
+  }
+  footer .container p {
+    margin-bottom: 10px;
+  }
+}
+
+/* End Footer */
